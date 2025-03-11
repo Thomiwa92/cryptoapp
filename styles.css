@@ -226,45 +226,83 @@ body {
     color: white;
   }
 
-  /* Profile Content */
-.profile-content {
-  padding: 20px;
+  /* Crypto Wallet Section */
+.crypto-wallet {
+  margin-top: 40px;
 }
 
-.profile-content h1 {
-  font-size: 32px;
+.crypto-wallet h2 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-.profile-info {
+.wallet-actions {
   display: flex;
   gap: 20px;
 }
 
-.profile-details {
-  flex: 2;
+.receive-crypto,
+.send-crypto {
+  flex: 1;
   background: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.profile-details h3 {
+.receive-crypto h3,
+.send-crypto h3 {
   font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.wallet-address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
-.profile-details label {
-  display: block;
+.wallet-address span {
   font-size: 16px;
-  margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.profile-details input {
-  width: 100%;
+.wallet-address button {
+  padding: 5px 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.wallet-address button:hover {
+  background: #0056b3;
+}
+
+.qr-code img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.send-crypto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.send-crypto label {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.send-crypto input,
+.send-crypto select {
   padding: 10px;
-  margin-bottom: 15px;
   border: none;
   border-radius: 8px;
   background: #2a2a2a;
@@ -273,13 +311,8 @@ body {
   outline: none;
 }
 
-.profile-details input[readonly] {
-  background: #1e1e1e;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.profile-details button {
-  padding: 10px 20px;
+.send-crypto button {
+  padding: 10px;
   background: #007bff;
   color: white;
   border: none;
@@ -289,37 +322,6 @@ body {
   transition: background 0.3s ease;
 }
 
-.profile-details button:hover {
-  background: #0056b3;
-}
-
-.profile-picture {
-  flex: 1;
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.profile-picture img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.profile-picture button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.profile-picture button:hover {
+.send-crypto button:hover {
   background: #0056b3;
 }
