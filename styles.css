@@ -98,7 +98,7 @@ body {
   
   /* Sidebar */
   .sidebar {
-    display: flex;
+    display: inline;
     width: 250px;
     background: #1a1a1a;
     padding: 20px;
@@ -117,6 +117,7 @@ body {
   }
   
   .sidebar ul li {
+    display: flex;
     margin: 15px 0;
   }
   
