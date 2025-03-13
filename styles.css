@@ -243,7 +243,10 @@ body {
   gap: 20px;
 }
 
-.receive-crypto,
+.receive-crypto,{
+  background: #1e1e1e;
+}
+
 .send-crypto {
   flex: 1;
   background: #1e1e1e;
